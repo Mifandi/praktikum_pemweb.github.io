@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+
+header {
+    width: 80%;
+    display: grid;
+    grid-template-areas:
+        "profil profil" 
+        "intro intro"
+        "story skill"
+        "edu lang";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 40px 20px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.profile-img {
+    margin-top: 10px;
+    background-image: url("../assets/img2.jpg");
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    grid-area: profil;
+    justify-self: center;
+    border: 2px solid darkgray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.panel-intro {
+    grid-area: intro;
+    justify-self: center;
+}
+
+.panel-intro .intro1 {
+    font-size: 2em;
+}
+
+.panel-intro .intro2 {
+    font-size: 1.5;
+}
+
+.story {
+    grid-area: story;
+}
+
+.hobi {
+    grid-area: skill;
+}
+
+.education {
+    grid-area: edu;
+}
+
+.kontak {
+    grid-area: lang;
+}
+
+.story, .kontak {
+    box-shadow: 0 0 10px rgba(250, 250, 250, 0.3);
+    padding: 20px;
+    background-color: #2c3e50 ;
+    border-radius: 5px;
+    color: white;
+}
+
+ol{
+    padding-left: 15px;
+}
+
+.hobi, .education {
+    box-shadow: 0 0 10px rgba(250, 250, 250, 0.3);
+    padding: 20px;
+    background-color: #bdc3c7;
+    border-radius: 5px;
+}
+
+.story:hover, .hobi:hover, .education:hover, .kontak:hover{
+    transform: scale(0.95);
+}
+
+.story, .hobi, .education, .kontak{
+    transition: all 400ms ease;
+}
