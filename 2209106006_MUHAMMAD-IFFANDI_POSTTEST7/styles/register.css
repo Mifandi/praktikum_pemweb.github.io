@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffafa;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.1); /* Memberi latar belakang semi-transparan pada form */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center; /* Posisikan secara horizontal di tengah */
+    align-items: center; /* Posisikan secara vertikal di tengah */
+    height: 100vh; /* Menjadikan tinggi full layar */
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: wheat;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px; /* Memberikan jarak antara tombol "Daftar" dan "Masuk di sini" */
+}
+
+.form-group {
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: wheat;
+}
+
+.form-group label {
+    width: 100px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.half {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* menengahkan secara vertikal */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    flex: 1;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: rgba(0, 0, 0, 0.3); /* Warna dengan transparansi */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    display: block; /* Mengubah menjadi blok agar dapat menerapkan lebar */
+    margin: 0 auto; /* Menengahkan tombol */
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Warna hover dengan transparansi */
+    transform: scale(1.05);
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+.login-link {
+    display: block;
+    position: relative;
+    text-align: center; /* Menyamakan teks di tengah secara horizontal */
+    margin: 0 auto; /* Meletakkan "Masuk di sini" di tengah */
+    text-decoration: none;
+    color: wheat;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
